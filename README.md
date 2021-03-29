@@ -1,5 +1,5 @@
 ### Promocode Panel
-  ####Features
+  #### Features
 - Dashboard
 - Lisiting of Promocodes
 - Searching 
@@ -14,7 +14,7 @@
 
 
 
-###Preview
+### Preview
 
 
 ![](https://nimbus-screenshots.s3.amazonaws.com/s/98f37e94d4b5bc5d18073489e7ca98da.png)

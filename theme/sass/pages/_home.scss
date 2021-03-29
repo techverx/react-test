@@ -1,0 +1,91 @@
+.main-wrapper{
+    margin-left: 80px;
+    .total-ammount-header{
+        background-color: $white-color;
+        padding: 10px 15px;
+        h6{
+            margin-bottom: 5px;
+            text-transform: capitalize;
+            font-size: 13px;
+        }
+        h5{
+            font-family: 'Rubik', sans-serif;
+            font-weight: 400;
+        }
+    }
+    .services-section{
+        padding: 25px 15px;
+        .custom-padding-top-bottom{
+            padding: 12px 0;
+        }
+        @include breakpoint(xs){
+            padding: 10px;
+        }
+        .custom-input-wrap{
+            display: flex;
+            align-items: center;
+           
+            @include breakpoint(xs){
+                flex-direction: column;
+            }
+        }
+        .search-box-wrapper{
+            border: 1px solid #E2E5EC;
+            border-radius: 4px;
+            width: 100%;
+            background: $white-color;
+            padding: 25px;
+            @include breakpoint(md){
+                padding: 15px;
+            }
+            @include breakpoint(sm){
+                padding: 15px;
+            }
+            @include breakpoint(xs){
+                padding: 10px 0;
+            }
+            align-items: flex-end;
+            margin:  0 auto;
+            .search-box-wrapper-left{
+                h3{
+                    margin-bottom: 10px;
+                    color: #000000;
+                    font-weight: 300;
+                    @include breakpoint(xs){
+                        margin-bottom: 10px;
+                    }
+                    
+                }
+                h6{
+                    font-size: 15px;
+                    text-transform: capitalize;
+                }
+            }
+            .search-box-wrapper-center{
+                @include breakpoint(sm){
+                    padding: 15px 10px;
+                }
+                .custom-input-wrap{
+                    position: relative;
+                    input{
+                        min-width: 100%;
+                        max-height: 46px;
+                        margin-bottom: 0;
+                        padding-right: 30px;
+                    }
+                   
+                }
+                .btn-clone{
+                    position: absolute;
+                    right: 10px;
+                    top: 56%;
+                    width: 20px;
+                    height: 20px;
+                    transform: translateY(-50%);
+                    color: $brand-color;
+                }
+                
+            }
+        }        
+    }
+}

@@ -1,0 +1,103 @@
+@import "./sass/base/reset", "./sass/base/typography";
+
+@import "./sass/partials/variables", "./sass/partials/mixins", "./sass/partials/layout";
+
+@import "./sass/layout/sidebar";
+
+@import "./sass/pages/home";
+
+@import "./sass/components/ui-elements";
+
+*{
+  box-sizing: border-box; 
+}
+body {
+  font-weight: 400;
+  background-color: $grey-blue;
+  font-family: 'Rubik', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+h2{
+  font-size: 39px;
+  font-family: 'Rubik', sans-serif;
+  color: $black-dark-clr;
+  font-weight: 300;
+  @include breakpoint(lg){
+    font-size: 36px;
+  }
+  @include breakpoint(md){
+    font-size: 32px;
+  }
+  @include breakpoint(sm){
+    font-size: 28px;
+  }
+}
+h3{
+  font-size: 29px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  @include breakpoint(lg){
+    font-size: 26px;
+  }
+  @include breakpoint(md){
+    font-size: 22px;
+  }
+  @include breakpoint(sm){
+    font-size: 20px;
+  }
+  color: $black-dark-clr;
+}
+
+h4{
+  font-size: 28px;
+}
+h5{
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  color: $black-dark-clr;
+}
+h6{
+  font-size: 11px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: $grey-pure-clr;
+  @include breakpoint(lg){
+    font-size: 12px;
+  }
+  @include breakpoint(md){
+    font-size: 12px;
+  }
+  @include breakpoint(sm){
+    font-size: 12px;
+  }
+}
+p{
+  font-size: 18px;
+}
+.wow {
+  visibility: hidden;
+}
+
+a[href^="tel"] {
+  text-decoration: inherit;
+  color: inherit;
+}
+.footer{
+  text-align: right;
+  margin-top: 45px;
+  p{
+    border-top: 1px solid $dark-grey-color;
+    margin: 0  20px;
+    padding: 15px 0;
+    font-family: 'Roboto', sans-serif;
+    color: #A8A8A8;
+    font-size: 13px;
+    @include  breakpoint(xs){
+      font-size: 12px;
+      margin: 0 15px;
+    }
+  }
+}

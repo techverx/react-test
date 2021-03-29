@@ -1,0 +1,159 @@
+.common-btn-style{
+    padding: 8px 0;
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    @include breakpoint(lg){
+      font-size: 18px;
+    }
+    @include breakpoint(md){
+      font-size: 16px;
+    }
+    @include breakpoint(sm){
+      font-size: 16px;
+    }
+}
+.empty-circle{
+    width: 24px;
+    height: 24px;
+    border: 3px solid $grey-clr;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    &.active{
+        border:3px solid $white-color;  
+    }
+}
+
+// Custom Scrollbar Css
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $brand-color; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $brand-color; 
+  }
+
+// Custom Scrollbar Css Ends
+
+.custom-padding-top-bottom{
+  padding-top: 8px;
+  padding-bottom: 8px;
+ 
+}
+.custom-input-wrap{
+  input{
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: $black-dark-clr;
+    border: 1px solid $dark-grey-blue;
+    min-width: 300px;
+    &::placeholder{
+      color: $black-dark-clr;
+    }
+    &:focus{
+      box-shadow: 0 0 0 0.10rem rgba(0,133,255,0.25);
+      border: 1px solid $brand-color !important;
+    }
+    @include breakpoint(mobile){
+      min-width: 200px;
+    }
+    @include breakpoint(xs){
+      min-width: 100%;
+      max-width: 100%;
+    }
+    &:focus{
+      border: 1px solid $dark-grey-blue;
+    }
+  }
+}
+.btn-search{
+  min-width: 150px;
+  border: 1px solid $dark-grey-blue;
+  margin-left: 8px;
+  border-radius: 4px;
+  position: relative;
+  padding: 8px 0;
+  @include breakpoint(sm){
+    min-width: 100px;
+  }
+  @include breakpoint(xs){
+    min-width: 100%;
+    margin-left: 0;
+    max-height: 40px;
+    padding: 5px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 0%;
+    background-color: transparent;
+    z-index: -1;
+    transition: 0.3s ease-out;
+  }
+  &:hover{
+    color: $white-color;
+    &::before {
+      width: 100%;
+      background: $black-color;
+    }
+  }
+}
+.btn-blue{
+  background: transparent;
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: $white-color;
+  position: relative;
+  z-index: 2;
+  border: 1px solid $brand-color;
+  transition: 0.3s ease-out;
+  border-radius: 3px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: -1px;
+    right: 0;
+    height: 101%;
+    width: 101%;
+    background-color: $brand-color;
+    z-index: -1;
+    transition: 0.3s ease-out;
+    border-radius: 3px;
+  }
+  &:hover{
+    color: $brand-color;
+    &::before {
+      height: 0%;
+      background: transparent;
+    }
+  }
+}
+
+
+
+
+

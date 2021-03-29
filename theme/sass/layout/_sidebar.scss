@@ -1,0 +1,24 @@
+.sidebar{
+    background-color: $black-color;
+    width: 80px;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    .common-btn-style{
+        padding: 20px 0;
+        &:hover{
+            span{
+                border-color: $white-color;
+            }
+            
+        }
+        img{
+            max-width: 27px;
+        }
+    }
+    .sidebar-links-ul{
+        max-height: calc(100vh - 80px);
+       overflow-y: scroll;
+    }
+}
